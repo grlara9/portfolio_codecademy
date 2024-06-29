@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+          <div class="navbar-brand">
+            <a href="aboutme.html">
+              Guillermo Lara
+            </a>
+          </div>
+  
+          <ul class="navbar-nav-right">
+            <li>
+              <a href="/index.html">About Me</a>
+            </li>
+            <li>
+              <a href="/portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a href="/contact.html">Contact</a>
+            </li>
+          </ul>
+    
+          <!-- Hamburger Menu -->
+          <button type="button" class="hamburger" id="menu-btn">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+      </nav>
+  
+      <!-- Mobile Menu -->
+      <div class="mobile-menu hidden" id="menu">
+        <ul>
+          <li>
+            <a href="/index.html">About Me</a>
+          </li>
+          <li>
+            <a href="/portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    <section class="container-grid-col">
+        <div class="profile">
+          <img src="./images/guillermo.jpg" alt="memo" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Guillermo</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+            Download CV
+          </button>
+                <button class="btn btn-color-1" onclick="location.href='/contact.html'">
+                  Contact Info
+                </button>
+            </div>
+            <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/guillermo-lara-7a0147161/">
+                      <img src="https://img.icons8.com/color/48/000000/linkedin-circled--v1.png"/>
+                  </a>  | 
+                  <a href="https://github.com/grlara9">
+                    <img src="https://img.icons8.com/color/48/000000/github--v1.png" /> 
+                  </a> 
+            </div>
+        </div>
+      </section>
+      <script src="/javascript/scripts.js"></script>
+</body>
+</html>
