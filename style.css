@@ -14,7 +14,7 @@
 
 html,
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.4;
   color: #000;
 }
@@ -424,7 +424,7 @@ button{
   margin-top: 10px;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 960px){
 
   .text-xl {
     font-size: 30px;
@@ -442,13 +442,11 @@ button{
     font-size: 14px;
   }
 }
-@media (max-width: 1100px){
+@media (max-width: 768px){
   
   .hamburger {
     display: block;
   }
-
- 
 
   .aboutme__image{
     margin: 0 auto;
@@ -462,17 +460,28 @@ button{
   .navbar .navbar-nav-right {
     display: none;
   }
-}
 
-@media (max-width: 700px){
   .container-grid-col{
     grid-template-columns: 1fr;
   }
   .box-text{
     flex-direction: column;
   }
-}
+  .about-containers{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .text-md{
+    font-size: 28px;
+  }
 
+  .text-sm{
+    font-size: 19px;
+  }
+}
 
 
 @media (min-width: 1440px) {

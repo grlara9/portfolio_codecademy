@@ -3,21 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar-container">
           <div class="navbar-brand">
-            <a href="aboutme.html">
+            <a href="index.html">
               Guillermo Lara
             </a>
           </div>
   
           <ul class="navbar-nav-right">
             <li>
-              <a href="/index.html">About Me</a>
+              <a href="/aboutme.html">About Me</a>
             </li>
             <li>
               <a href="/portfolio.html">Portfolio</a>
@@ -26,8 +32,7 @@
               <a href="/contact.html">Contact</a>
             </li>
           </ul>
-  
-  
+    
           <!-- Hamburger Menu -->
           <button type="button" class="hamburger" id="menu-btn">
             <span class="hamburger-top"></span>
@@ -41,7 +46,7 @@
       <div class="mobile-menu hidden" id="menu">
         <ul>
           <li>
-            <a href="/index.html">About Me</a>
+            <a href="/aboutme.html">About Me</a>
           </li>
           <li>
             <a href="/portfolio.html">Portfolio</a>
@@ -51,39 +56,29 @@
           </li>
         </ul>
       </div>
-
-      <section class="container-grid-col">
-         <div class="profile"> 
-             <img src="/images/guillermo2.jpg" alt="my profile picture" />
-         </div>
-
-         <div class="detail-container">
-          <div class="box-text"> 
-            <p class="text-sm">
-              Career Summary
-              Results-oriented Associate Software Engineer with a comprehensive educational background 
-              in Web Development, complemented by practical experience as a Software Engineer at ClinicSource
-              Therapy Practice Management Software. Armed with a Computer Science and Web development, 
-              I possess a strong foundation in software development, honed through hands-on projects 
-              and collaborative team environments. Proficient in HTML, CSS, Javascript, and proficient in using frameworks such as React JS. 
-              I have successfully contributed to the enhancement of ClinicSource's EMR and 
-              Practice Management System software solutions.<br>
-            </p>
-          </div>
-          <div class="about-containers">
-              <div class="details-container">
-               <h3 class="text-md">Experience</h3>
-               <p class="text-sm">1+ years <br />Software Engineer</p>
-             </div>
-             <div class="details-container">
-               <h3 class="text-md">Education</h3>
-               <p class="text-sm">B.S. Computer Science<br />Web Development</p>
-             </div>
-          </div>
-         </div>
-         
-     </section>
-
-    <script src="/javascript/scripts.js"></script>
+    <section class="container-grid-col">
+        <div class="profile">
+          <img src="./images/guillermo.jpg" alt="memo" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Guillermo</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+              <button class="btn btn-dark-outline" onclick="window.open('./assets/Guillermo Lara_Software Engineer (1).pdf')">
+            Download CV
+          </button>
+            </div>
+            <div class="social-icons">
+                  <a href="https://www.linkedin.com/in/grlara9/">
+                      <img src="https://img.icons8.com/color/48/000000/linkedin-circled--v1.png"/>
+                  </a>  | 
+                  <a href="https://github.com/grlara9">
+                    <img src="https://img.icons8.com/color/48/000000/github--v1.png" /> 
+                  </a> 
+            </div>
+        </div>
+      </section>
+      <script src="/javascript/scripts.js"></script>
 </body>
 </html>
