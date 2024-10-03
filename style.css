@@ -17,6 +17,9 @@ body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.4;
   color: #000;
+  height: 100%;
+  
+
 }
 
 a {
@@ -369,13 +372,14 @@ section {
 
 
 /*contact form */
+
 .contact{
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   padding:35px;
+ 
 }
 
 .contact > h1{
@@ -424,6 +428,33 @@ button{
   margin-top: 10px;
 }
 
+footer{
+  text-align: center;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px 30px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.social img {
+  width: 35px;
+  height: 35px;
+}
+
+.social a {
+  text-decoration: none;
+  margin-right: 20px;
+}
 @media (max-width: 960px){
 
   .text-xl {
