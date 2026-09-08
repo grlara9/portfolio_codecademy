@@ -8,3 +8,23 @@ function navToggle() {
 }
 
 btn.addEventListener('click', navToggle)
+
+//using selectors inside the element
+const questions = document.querySelectorAll(".question");
+
+questions.forEach(function (question) {
+  const btns = question.querySelector(".question-btn");
+  // console.log(btn);
+
+  btns.addEventListener("click", function () {
+    // console.log(question);
+
+    questions.forEach(function (item) {
+      if (item !== question) {
+        item.classList.remove("show-text");
+      }
+    });
+
+    question.classList.toggle("show-text");
+  });
+});
