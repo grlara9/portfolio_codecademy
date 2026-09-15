@@ -1,13 +1,13 @@
-const btn = document.getElementById('menu-btn')
-const nav = document.getElementById('menu')
+const btn = document.getElementById("menu-btn");
+const nav = document.getElementById("menu");
 
 function navToggle() {
-  btn.classList.toggle('open')
-  nav.classList.toggle('hidden')
-  document.body.classList.toggle('no-scroll')
+  btn.classList.toggle("open");
+  nav.classList.toggle("open");
+  document.body.classList.toggle("no-scroll");
 }
 
-btn.addEventListener('click', navToggle)
+btn.addEventListener("click", navToggle);
 
 //using selectors inside the element
 const questions = document.querySelectorAll(".question");

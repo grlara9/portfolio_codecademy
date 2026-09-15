@@ -149,9 +149,6 @@ a:hover {
 .hamburger-icon span:first-child {
   transform: none;
 }
-.hidden {
-  transform: translateX(100%);
-}
 
 .no-scroll {
   overflow: hidden;
