@@ -3,7 +3,6 @@
 :root {
   --color-primary: #fac60f;
   --color-secondary: #fac60f1a;
-  --color-extra: #d4e9e2;
 }
 
 * {
@@ -29,9 +28,8 @@ ul {
 }
 
 p {
-  margin: 5px 0;
+  margin-right: 12px;
   line-height: 1.7;
-  font-size: 18px;
 }
 
 section a {
@@ -165,7 +163,7 @@ a:hover {
 
 section {
   padding-top: 32px;
-  height: 94vh;
+  height: 84vh;
   min-height: fit-content;
 }
 
@@ -298,11 +296,14 @@ section {
 /*aboutme */
 #aboutme {
   background-color: var(--color-secondary);
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  align-items: center;
+  justify-content: center;
 }
 .detail-container {
   display: flex;
   flex-direction: column;
-  padding-left: 24px;
 }
 
 .about-containers,
@@ -415,9 +416,7 @@ footer {
   .container-grid-col {
     grid-template-columns: 1fr;
   }
-  .box-text {
-    flex-direction: column;
-  }
+
   .about-containers {
     display: flex;
     flex-direction: column;
@@ -431,6 +430,14 @@ footer {
 
   .text-sm {
     font-size: 19px;
+  }
+
+  #aboutme {
+    grid-template-columns: 1fr;
+  }
+
+  p {
+    text-align: center;
   }
   .contact-info-upper-container {
     display: flex;
