@@ -28,3 +28,13 @@ questions.forEach(function (question) {
     question.classList.toggle("show-text");
   });
 });
+
+let navi = document.querySelector("nav");
+let val;
+window.onscroll = function () {
+  if (document.documentElement.scrollTop > 20) {
+    navi.classList.add("sticky");
+  } else {
+    navi.classList.remove("sticky");
+  }
+};

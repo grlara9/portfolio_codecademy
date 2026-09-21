@@ -19,10 +19,6 @@ body {
   height: 100%;
 }
 
-a {
-  color: #000;
-}
-
 ul {
   list-style: none;
 }
@@ -42,11 +38,31 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 16vh;
+  transition: all 0.5s ease;
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
 }
 
-.navbar-brand {
+nav.sticky {
+  padding: 12px 0;
+  background: var(--color-primary);
+}
+
+.navbar-brand a {
   font-weight: bold;
   font-size: 2.5rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar-brand a:hover {
+  color: var(--color-primary);
+  transition: all 0.3s ease;
+}
+
+nav.sticky .navbar-brand a:hover {
+  color: #ffffff;
 }
 
 .nav-links {
@@ -56,17 +72,39 @@ nav {
   font-size: 1.5rem;
 }
 
-a {
+.nav-links a {
   text-decoration: none;
+  color: #000;
 }
 
-a:hover {
+.nav-links a:hover {
   color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  transition: all 0.4s ease;
+}
+
+nav.sticky .nav-links a:hover {
+  color: #ffffff;
 }
 
 .social-icons {
   font-size: 1.5rem;
   gap: 1rem;
+}
+
+.social-icons a {
+  color: #000;
+}
+
+.social-icons a:hover {
+  color: var(--color-primary);
+  transition: all 0.4s ease;
+}
+
+nav.sticky .social-icons a:hover {
+  color: #ffffff;
+  transition: all 0.4s ease;
 }
 
 /*Hamburger menu*/
@@ -163,7 +201,7 @@ a:hover {
 
 section {
   padding-top: 32px;
-  height: 84vh;
+  height: 94vh;
   min-height: fit-content;
 }
 
