@@ -366,23 +366,19 @@ section {
   display: flex;
   justify-content: space-around;
 }
-
-.contact {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.contact {
+/*Contact Section */
+#contact {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 60vh;
+  background-color: var(--color-secondary);
 }
 
 .contact-info-upper-container {
   display: flex;
   justify-content: center;
-
+  border-radius: 18px;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   background: (250, 250, 250);
@@ -396,6 +392,7 @@ section {
   justify-content: center;
   gap: 0.5rem;
   margin-left: 12px;
+  font-size: 30px;
 }
 
 .contact-info-container p a {
@@ -499,6 +496,12 @@ footer {
   .contact-info-upper-container {
     display: flex;
     flex-direction: column;
+  }
+
+  .contact-info-container {
+    justify-content: flex-start;
+    padding: 18px;
+    font-size: 28px;
   }
   #desktop-nav {
     display: none;
