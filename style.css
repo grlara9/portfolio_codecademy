@@ -323,7 +323,6 @@ section {
 }
 /*landing page*/
 .section__text {
-  align-self: center;
   text-align: center;
 }
 
@@ -352,6 +351,10 @@ section {
   grid-template-columns: 400px 1fr;
   align-items: center;
   justify-content: center;
+}
+
+#aboutme img {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 .detail-container {
   display: flex;
@@ -457,12 +460,12 @@ footer {
   }
 }
 @media (max-width: 968px) {
-  nav.sticky {
-  }
   .text-lg {
     font-size: 1.5rem;
   }
-
+  #home {
+    padding-top: 5rem;
+  }
   .aboutme__image {
     margin: 0 auto;
   }
