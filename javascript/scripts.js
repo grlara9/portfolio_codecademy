@@ -30,11 +30,14 @@ questions.forEach(function (question) {
 });
 
 let navi = document.querySelector("nav");
+let mobileNav = document.getElementById("hamburger-nav");
 let val;
 window.onscroll = function () {
   if (document.documentElement.scrollTop > 20) {
     navi.classList.add("sticky");
+    mobileNav.classList.add("sticky");
   } else {
     navi.classList.remove("sticky");
+    mobileNav.classList.remove("sticky");
   }
 };
