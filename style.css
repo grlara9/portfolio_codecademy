@@ -324,6 +324,10 @@ section {
 /*landing page*/
 .section__text {
   text-align: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section__text p {
@@ -431,6 +435,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: var(--color-primary);
 }
 
 .footer-container {
